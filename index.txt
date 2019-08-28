@@ -1,1 +1,14 @@
+Anil - 2
 
+I'm a new student of the Fall 2019 batch working on my Masters of Applied Computer Science.
+
+I'm born & brought from Hyderabad, India, completed an undergraduate in Electrical & Communication department in the year 2016.  Since I'm not from CS background spent most of my time understanding programming concepts. I've had almost 3years of work experience at Doche Cloud Technologies (DCT), as MEAN stack and Python developer along with few services from AWS, Azure, Google Cloud. I use to have a pretty ordinary lifestyle.
+
+I'm still not cleary with my career interest but, here are some area of interest I'm looking for 
+
+  * AI/ML engineer
+  * BI analyst
+  * Big Data Engineer
+  * Database Administrator
+  
+Check my profile at Linked-in: https://linkedin.com/in/anil-bomma/
