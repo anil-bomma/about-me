@@ -16,15 +16,13 @@ Here are few tools to get started with GitHub pages:
   * Create a new GitHub account & create a repo <https://github.com/>
   * Learn about few basic syntax about markdown language <https://www.markdownguide.org/basic-syntax/#horizontal-rules>
   * Github Pages reference <https://pages.github.com/>
-  * Use IDE's like visual studio code/notepad++ as text editor or simple you can make changes in cloud it self.
+  * Use IDE's like visual studio code/notepad++ as text editor or simple you can make changes in cloud i.e; from gitHub you can change the README.md file.
 
 ## Recommended Resources
 
-README.md: Add second-level heading for Recommended Resources. Share links to at least 3 resources you like for web development (e.g. https://github.com/kamranahmedse/developer-roadmap (Links to an external site.)).
+Few useful link for the web-development:
 
-Few usefull link for the web-development:
-
-  * Here is the comeplete web development tour <>
+  * Here is the complete web development tour <>
   * Looking to learn programming languages? here is the best site I refer for all <https://www.geeksforgeeks.org/>
   * Best place if you stuck with your code simple post your problem/search at stack-over-flow <https://stackoverflow.com/> 
 
