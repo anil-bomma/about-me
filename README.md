@@ -22,7 +22,7 @@ Here are few tools to get started with GitHub pages:
 
 Few useful link for the web-development:
 
-  * Here is the complete web development tour <>
+  * Here is the complete web development tour <https://coggle.it/diagram/Vz9LvW8byvN0I38x/t/web-development>
   * Looking to learn programming languages? here is the best site I refer for all <https://www.geeksforgeeks.org/>
   * Best place if you stuck with your code simple post your problem/search at stack-over-flow <https://stackoverflow.com/> 
 
