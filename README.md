@@ -2,8 +2,8 @@
 
 ##  Repository Links
 
-  * [Source repository](https://github.com/anil-bomma/about-me) on github (<https://github.com/anil-bomma/about-me>)
-  * [Hosted page](https://anil-bomma.github.io/about-me) on github (<https://anil-bomma.github.io/about-me/>)
+  - [Demo](https://anil-bomma.github.io/about-me/)
+  - [Source](https://github.com/anil-bomma/about-me) on github (<https://github.com/anil-bomma/about-me>)
   
 ## About
 
