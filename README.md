@@ -3,7 +3,7 @@
 ##  Repository Links
 
   - [Demo](https://anil-bomma.github.io/about-me/)
-  - [Source](https://github.com/anil-bomma/about-me) on github (<https://github.com/anil-bomma/about-me>)
+  - [Source](https://github.com/anil-bomma/about-me)
   
 ## About
 
