@@ -32,6 +32,7 @@ Few useful link for the web-development:
   * Website template design [here](https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0134-02_toby_powell.jpg)
   * Bootstrap 4 [here](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
   * W3School [here](https://www.w3schools.com/)
+  * Devops Tuto [here](https://www.youtube.com/watch?v=_Gpe1Zn-1fE)
   
 
 
