@@ -26,6 +26,15 @@ Few useful link for the web-development:
   * Looking to learn programming languages? here is the best site I refer for all [Geeks for Geeks](https://www.geeksforgeeks.org/)
   * Best place if you stuck with your code simple post your problem/search at [stack-over-flow](https://stackoverflow.com/)
 
+
+## References
+  
+  * Website template design [here](https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0134-02_toby_powell.jpg)
+  * Bootstrap 4 [here](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+  * W3School [here](https://www.w3schools.com/)
+  
+
+
 ## Contributors
 
 **Bomma Anil**, _Graduate Applied Computer Science_, _Northwest Missouri State University_
