@@ -91,10 +91,8 @@
                                     <div>
                                         <ul class="list-unstyled" v-for="news in dataArray">
                                             <b-media tag="li" class="item-pad">
-                                                <template v-slot:aside>
-                                                    <img :src="news.urlToImage" img-alt="Image" img-top tag="article"
-                                                        style="max-width: 12rem;" class="card"></img>
-                                                </template>
+                                                <img :src="news.urlToImage" img-alt="Image" img-top tag="article"
+                                                    style="max-width: 12rem;" class="card"></img>
                                                 <h5 class="mt-0 mb-1">{{news.title}}</h5>
                                                 <p class="mb-0">
                                                     {{news.description}}
