@@ -86,13 +86,14 @@
                             </div>
                             <hr v-show="captilizeName" />
                             <div v-if="captilizeName">
-                                <div class="row" v-show="!loader">
+                                <div v-show="!loader">
                                     {{getMethods()}}
-                                    <div>
-                                        <ul class="list-unstyled" v-for="news in dataArray">
-                                            <b-media tag="li" class="item-pad">
-                                                <img :src="news.urlToImage" img-alt="Image" img-top tag="article"
-                                                    style="max-width: 12rem;" class="card"></img>
+                                    <div class="item-pad" v-for="news in dataArray">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img :src="news.urlToImage" img-alt="Image"></img>
+                                            </div>
+                                            <div class="col-sm-9">
                                                 <h5 class="mt-0 mb-1">{{news.title}}</h5>
                                                 <p class="mb-0">
                                                     {{news.description}}
@@ -101,8 +102,8 @@
                                                 <br />
                                                 <b-button :href="news.url" variant="primary" class="btn btn-sm"
                                                     target="blank">Go More Info</b-button>
-                                            </b-media>
-                                        </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
