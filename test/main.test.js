@@ -1,6 +1,6 @@
 QUnit.module('MAIN MODULE', {})  // group all these tests together
 
-QUnit.test('TEST vowelCount', assert => {
+QUnit.test('TEST vowelCount function', assert => {
     assert.equal(vowelCount(""), 0, 'when no input is passed then count is 0');
     assert.equal(vowelCount("zzz"), 0, 'when input passed without vowel then count is 0');
     assert.equal(vowelCount("hello"), 2, 'when input passed with vowel then count is 2');
