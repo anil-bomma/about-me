@@ -33,8 +33,9 @@ Few useful link for the web-development:
   * Bootstrap 4 [here](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
   * W3School [here](https://www.w3schools.com/)
   * Devops Tuto [here](https://www.youtube.com/watch?v=_Gpe1Zn-1fE)
-  * News API [here](https://newsapi.org/)  
-
+  * News API [here](https://newsapi.org/)
+  * Vue JS [here](https://vuejs.org/)
+  * BootStrap Vue [here](https://bootstrap-vue.js.org/)
 
 ## Contributors
 
