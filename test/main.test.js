@@ -7,4 +7,5 @@ QUnit.test('TEST vowelCount', assert => {
     assert.equal(vowelCount("aeiou"), 5, 'when input passed with all vowels in string, 5');
     assert.equal(vowelCount("12345"), 0, 'when number input is passed then return 0');
     assert.equal(vowelCount("!@#$%^&"), 0, 'when special charater input is passed then return 0');
+    assert.equal(vowelCount(null), false, 'it will return error since passing null value');
 })
