@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>News</title>
+    <link rel="shortcut icon" href="../assets/logo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="news">
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="../index.html">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">About Me <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pronunce.html">Pronunce</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <article>
+            <div class="container news-conatiner">
+                <div class="row">
+                    <section class="col-sm">
+                        <div id="news-app" class="news">
+                            <h1 class="text-center">
+                                NEWS
+                                <div class="btn-group btn-group-toggle pull-right m-t-15" data-toggle="buttons">
+                                    <img src="../assets/download.jpg" class="img-icon" />
+                                    <label class="btn btn-sm btn-secondary active"
+                                        v-on:click="saveInLocalStorage('disable')">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                        Disable
+                                    </label>
+                                    <label class="btn btn-sm btn-secondary" v-on:click="saveInLocalStorage('enable')">
+                                        <input type="radio" name="options" id="option2" autocomplete="off">
+                                        Enabled
+                                    </label>
+                                    <label class="btn btn-sm btn-secondary" v-on:click="saveInLocalStorage('clear')">
+                                        <input type="radio" name="options" id="option2" autocomplete="off">
+                                        Clear
+                                    </label>
+                                </div>
+                            </h1>
+                            <b-form-select v-model="source_id" :options="options"></b-form-select>
+                            <h2 class="mt-3 captilize-name">{{ captilizeName }}</strong></h2>
+                            <div class="text-center" v-show="loader">
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <hr v-show="captilizeName" />
+                            <div v-if="captilizeName">
+                                <div class="row" v-show="!loader">
+                                    {{getMethods()}}
+                                    <div>
+                                        <ul class="list-unstyled" v-for="news in dataArray">
+                                            <b-media tag="li" class="item-pad">
+                                                <template v-slot:aside>
+                                                    <img :src="news.urlToImage" img-alt="Image" img-top tag="article"
+                                                        style="max-width: 12rem;" class="card"></img>
+                                                </template>
+                                                <h5 class="mt-0 mb-1">{{news.title}}</h5>
+                                                <p class="mb-0">
+                                                    {{news.description}}
+                                                </p>
+                                                <strong>Author:</strong> {{news.author}}
+                                                <br />
+                                                <b-button :href="news.url" variant="primary" class="btn btn-sm"
+                                                    target="blank">Go More Info</b-button>
+                                            </b-media>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="footer-fix">
+                &copy;&nbsp;2019 received @Anil Bomma
+            </footer>
+        </article>
+    </main>
+
+    <!-- Vue.js must be added before our custom code from https://cdnjs.com/libraries/vue -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+
+
+    <!-- Load required Bootstrap and BootstrapVue CSS -->
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+
+
+    <!-- Load polyfills to support older browsers -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"
+        crossorigin="anonymous"></script>
+
+    <!-- Load Vue followed by BootstrapVue -->
+    <script src="https://unpkg.com/vue@latest/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+
+
+    <!-- custom script -->
+    <script src="../js/news.js"></script>
+</body>
+
+</html>

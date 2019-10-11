@@ -98,13 +98,13 @@ footer {
 }
 
 .footer-fix {
+    bottom: 0;
     position: fixed;
     left: 0;
-    bottom: 0;
+    padding-left: 3%;
 }
 
 .contact-form {
-    margin-top: 10%;
     border: 1px solid #999;
     padding: 3%;
     background: #eee;
@@ -116,4 +116,42 @@ img {
 
 iframe {
     width: 100%
+}
+
+.m-per-5 {
+    margin: 8%;
+}
+
+.news { 
+    background: #eee !important
+}
+
+.news-conatiner {
+    margin: 3% auto;
+    border: 1px solid #999;
+    padding: 2%;
+    min-height: 70vh;
+}
+
+.captilize-name {
+    text-transform: capitalize;
+}
+
+.m-l-none{
+    margin-right: 0px !important
+}
+
+.item-pad{
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid #666;
+}
+
+.m-t-15 {
+    margin-top: 15px;
+}
+
+.img-icon {
+    height: 33px;
+    width: 30px;
 }
