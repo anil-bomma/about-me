@@ -33,7 +33,7 @@ Few useful link for the web-development:
   * Bootstrap 4 [here](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
   * W3School [here](https://www.w3schools.com/)
   * Devops Tuto [here](https://www.youtube.com/watch?v=_Gpe1Zn-1fE)
-  
+  * News API [here](https://newsapi.org/)  
 
 
 ## Contributors
