@@ -1,17 +1,17 @@
 let vowelCount = (str) => {
-    try {
-        let vowelList = 'aeiouAEIOU';
-        let count = 0;
-
-        for (let indx = 0; indx < str.length; indx++) {
-            if (vowelList.indexOf(str[indx]) !== -1) {
-                count += 1;
-            }
-        }
-        return count;
-    } catch (error) {
-        return error;
+    if (!str) {
+        throw Error("the given argument passing is null");
     }
+    let vowelList = 'aeiouAEIOU';
+    let count = 0;
+
+    for (let indx = 0; indx < str.length; indx++) {
+        if (vowelList.indexOf(str[indx]) !== -1) {
+            count += 1;
+        }
+    }
+    return count;
+
 
 }
 
